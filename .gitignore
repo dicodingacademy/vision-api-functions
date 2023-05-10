@@ -1,2 +1,4 @@
 .env
+.firebaserc
 node_modules
+*.log
