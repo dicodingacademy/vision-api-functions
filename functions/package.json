@@ -1,6 +1,7 @@
 {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
+  "author": "Rizqy H. <rizqy22@gmail.com>",
   "scripts": {
     "lint": "eslint .",
     "serve": "firebase emulators:start --only functions",
