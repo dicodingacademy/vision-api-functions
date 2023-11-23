@@ -12,7 +12,7 @@ dotenv.config();
     return;
   }
 
-  const imageContent = readFileSync(imagePath, { encoding: "base64" });
+  const imageContent = readFileSync(imagePath);
 
   console.log(await recognizeText(imageContent));
 })();
