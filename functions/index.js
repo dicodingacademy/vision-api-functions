@@ -15,7 +15,7 @@ const limiter = FirebaseFunctionsRateLimiter.withRealtimeDbBackend(
   getDatabase()
 );
 
-export const ocr = onRequest({ cors: true }, async (request, response) => {
+export const ocr = onRequest({ cors: true, maxInstances: 1 }, async (request, response) => {
   await limiter.rejectOnQuotaExceededOrRecordUsage();
 
   try {
